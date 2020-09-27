@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/HamzaMouhcine/Track-It-Now#readme",
   "dependencies": {
-    "angular-cli": "^1.0.0-beta.28.3",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
