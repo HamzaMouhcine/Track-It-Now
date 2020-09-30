@@ -5,8 +5,8 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 
-// connecting to database
 const config = require('./config/database');
+// connecting to database
 mongoose.connect(config.database, { useNewUrlParser: true,useUnifiedTopology: true });
 
 mongoose.connection.on('connected', () => {
