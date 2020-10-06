@@ -1,0 +1,8 @@
+.background {
+ background-image: url("./../assets/home.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-color: #cccccc;
+ min-height: 100vh;
+ display: flex;
+}

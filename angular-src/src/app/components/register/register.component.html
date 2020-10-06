@@ -1,6 +1,6 @@
-<h2 class="page-header text-center">Register</h2>
 
 
+<!-- 
 <form (submit)="onRegisterSubmit()">
 	<div class="form-group">
 		<label>Name:</label>
@@ -20,3 +20,51 @@
 	</div>
 	<input type="submit" class="btn btn-primary" value="submit">
 </form>
+-->
+
+<div class="card">
+
+  <h5 class="card-header info-color white-text text-center py-4">
+    <strong>Sign up</strong>
+  </h5>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;" (submit)="onRegisterSubmit()">
+
+      <!-- Email -->
+      <div class="md-form">
+        <label for="materialLoginFormName">Name</label>
+        <input type="text" [(ngModel)]="name" name="name" id="materialLoginFormName" class="form-control">
+      </div>
+
+      <div class="md-form">
+        <label for="materialLoginFormUsername">Username</label>
+        <input type="text" [(ngModel)]="username" name="username" id="materialLoginFormUsername" class="form-control">
+      </div>
+
+      <div class="md-form">
+        <label for="materialLoginFormEmail">Email</label>
+        <input type="text" [(ngModel)]="email" name="email" id="materialLoginFormEmail" class="form-control">
+      </div>
+
+      <!-- Password -->
+      <div class="md-form">
+        <label for="materialLoginFormPassword">Password</label>
+        <input type="password" [(ngModel)]="password" name="password" id="materialLoginFormPassword" class="form-control">
+      </div>
+
+      <!-- Sign in button -->
+      <input class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="Sign up">
+
+      <!-- Register -->
+      <p>Already a member?
+      	<a [routerLink]="['/login']">Sign in</a>
+      </p>
+    </form>
+
+  </div>
+
+</div>

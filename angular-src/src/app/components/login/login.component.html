@@ -1,6 +1,5 @@
-<h2 class="page-header text-center"> Login </h2>
 
-
+<!--
 <form (submit)="onLoginSubmit()">
 	<div class="form-group">
 		<label> Username </label>
@@ -12,3 +11,41 @@
 	</div>
 	<input type="submit" class="btn btn-primary" value="Login">
 </form>
+-->
+
+<div class="card">
+
+  <h5 class="card-header info-color white-text text-center py-4">
+    <strong>Sign in</strong>
+  </h5>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;" (submit)="onLoginSubmit()">
+
+      <!-- Email -->
+      <div class="md-form">
+        <label for="materialLoginFormUsername">Username</label>
+        <input [(ngModel)]="username" name="username" type="email" id="materialLoginFormUsername" class="form-control">
+      </div>
+
+      <!-- Password -->
+      <div class="md-form">
+        <label for="materialLoginFormPassword">Password</label>
+        <input [(ngModel)]="password" name="password" type="password" id="materialLoginFormPassword" class="form-control">
+      </div>
+
+      <!-- Sign in button -->
+      <input class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="Sign in">
+
+      <!-- Register -->
+      <p>Not a member?
+      	<a [routerLink]="['/register']">Register</a>
+      </p>
+    </form>
+
+  </div>
+
+</div>
