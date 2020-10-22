@@ -1,0 +1,26 @@
+<p>friends works!</p>
+<ul class="nav nav-pills">
+	<li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="nav-link active" [routerLink]="['/friends/list']">List</a></li>
+	<li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="nav-link" [routerLink]="['/friends/add']">Add</a></li>
+  
+</ul>
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+<p>
+	<button (click)="showList()">List</button>
+	<button (click)="showAdd()">Add</button>
+</p>
+<router-outlet></router-outlet>
