@@ -15,12 +15,4 @@ export class FriendsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  showAdd() {
-  	this.router.navigate(['add'], {relativeTo: this.route});
-  }
-
-  showList() {
-  	this.router.navigate(['list'], {relativeTo: this.route});
-  }
 }

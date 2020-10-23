@@ -20,6 +20,7 @@ import { AuthGuard } from './guards/guard.service';
 import { FriendsComponent } from './components/friends/friends.component';
 import { ListComponent } from './components/friends/components/list/list.component';
 import { AddComponent } from './components/friends/components/add/add.component';
+import { PendingComponent } from './components/friends/components/pending/pending.component';
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     component: FriendsComponent,
     children: [
       { path: 'add', component: AddComponent},
-      { path: 'list', component: ListComponent}
+      { path: 'list', component: ListComponent},
+      { path: 'pending', component: PendingComponent}
     ]
   }
 ]
@@ -48,7 +50,8 @@ const appRoutes: Routes = [
     DashboardComponent,
     FriendsComponent,
     ListComponent,
-    AddComponent
+    AddComponent,
+    PendingComponent
   ],
   imports: [
     BrowserModule,
