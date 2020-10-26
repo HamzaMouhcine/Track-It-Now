@@ -12,15 +12,16 @@ import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ListComponent } from './components/friends/components/list/list.component';
+import { AddComponent } from './components/friends/components/add/add.component';
+import { PendingComponent } from './components/friends/components/pending/pending.component';
+import { FriendsComponent } from './components/friends/friends.component';
 
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
+import { FriendService } from './services/friend.service';
 import { AuthGuard } from './guards/guard.service';
-import { FriendsComponent } from './components/friends/friends.component';
-import { ListComponent } from './components/friends/components/list/list.component';
-import { AddComponent } from './components/friends/components/add/add.component';
-import { PendingComponent } from './components/friends/components/pending/pending.component';
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
@@ -64,6 +65,7 @@ const appRoutes: Routes = [
   providers: [
               ValidateService,
               AuthService,
+              FriendService,
               AuthGuard
              ],
   bootstrap: [AppComponent]

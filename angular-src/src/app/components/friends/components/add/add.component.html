@@ -1,1 +1,20 @@
-<p>add works!</p>
+<div class="card">
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->											    
+    <form class="text-center" style="color: #757575;" (submit)="OnSendRequestSubmit()">
+
+      <!-- Name -->
+      <div class="md-form mt-3">
+        <input [(ngModel)]="username" name="username" type="text" id="materialLoginFormUsername" class="form-control" placeholder="Enter Name">
+      </div>
+
+      <!-- Send request in button -->
+      <input class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="Send Request">
+
+    </form>
+
+  </div>
+
+</div>

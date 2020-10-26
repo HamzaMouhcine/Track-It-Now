@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-friends',
@@ -8,10 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class FriendsComponent implements OnInit {
 
-  constructor(
-  	private route: ActivatedRoute,
-  	private router: Router
-  	) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
