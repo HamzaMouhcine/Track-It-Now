@@ -21,8 +21,9 @@ mongoose.connection.on('error', (err) => {
 const app = express();
 const port = 3000;
 
-// requiring users router
+// requiring users and friends router
 const users = require('./routes/users');
+const friends = require('./routes/friends');
 
 // to enable requests from frontend to backend
 app.use(cors());
@@ -39,6 +40,9 @@ require('./config/passport')(passport);
 
 // Users router
 app.use('/users', users);
+
+// Friends router
+app.use('/friends', friends);
 
 app.get('/', (req, res, next)=> {
 	res.end("Welcome");
