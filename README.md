@@ -1,49 +1,37 @@
-# track-it-now
+# Track It Now
 
-> https://trackitdone.com/
+## Description
 
-background details relevant to understanding what this module does
+Track-It-Now is a web application that helps users to track their activities, make plans, and work on projects together with other users.
 
-## Usage
+## Project Setup
 
+### Prerequisites
+
+You need to have Node and NPM installed on your PC.
+
+[`Downloading and installing Node.js and npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+The project uses MongoDB as a database, set up mongodb on your machine(version 4.4.1 or later).
+
+### How To Install
+
+Download the source code using git or else download and unzip the zip file.
+
+Open a terminal window and go to the project root folder.
+
+You need to have npm installed globally.
+
+Run npm i in the root folder and angular-src folder to install the required libraries.
+
+### How To Run
+
+Start the MongoDB server.
+
+Run 
 ```js
-var trackItNow = require('track-it-now')
-
-console.log('hello warld')
+npm start
 ```
+for a dev server.
 
-outputs
-
-```
-hello warld
-```
-
-## API
-
-```js
-var trackItNow = require('track-it-now')
-```
-
-See [api_formatting.md](api_formatting.md) for tips.
-
-## Install
-
-With [npm](https://npmjs.org/) installed, run
-
-```
-$ npm install track-it-now
-```
-
-## Acknowledgments
-
-track-it-now was inspired by..
-
-## See Also
-
-- [`noffle/common-readme`](https://github.com/noffle/common-readme)
-- ...
-
-## License
-
-ISC
-
+Navigate to http://localhost:3000/.
